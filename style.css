@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-
 /* Шапка сайта */
 header {
     background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
@@ -28,17 +27,28 @@ header {
 .header-top {
     display: flex;
     flex-direction: column;
-    
     padding: 15px 0;
 }
 
-
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+     gap: 45px;
+}
 
 .logo img {
     border-radius: 5px;
-    margin-bottom: 15px;
+    flex-shrink: 0;
 }
 
+.header-bottom h1 {
+    
+    margin: 0;
+     white-space: nowrap; 
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -64,17 +74,9 @@ nav a:hover {
     opacity: 0.8;
 }
 
-.header-bottom {
-    padding: 20px 0;
-    text-align: center;
-  
-}
 
-.header-bottom h1 {
-    font-size: 1.8rem;
-    margin: 0;
-    
-}
+
+
 
 /* Основное содержимое */
 main {
@@ -274,7 +276,15 @@ footer p {
         justify-content: space-between;
         align-items: center;
     }
-    
+    .header-left {
+        width: auto;
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+     .header-bottom h1 {
+        text-align: left;
+        margin-left: 20px;
+    }
     .logo img {
         margin-bottom: 0;
     }
