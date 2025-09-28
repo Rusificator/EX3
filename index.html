@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 3 - Разработка пользовательского web-интерфейса</title>
     <link rel="stylesheet" href="style.css">
- 
-
   </head>
 
   <body>
@@ -16,11 +14,15 @@
     <header>
         <div class="container">
             <div class="header-top">
+                
                 <div class="logo">
-                  
                     <a href="index.html" > <img src="KubGU.png" alt="Логотип КубГУ" width="100"></a>
-                    
                 </div>
+
+
+                 <div class="header-bottom">
+           <h1>Задание 3</h1>
+        </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
@@ -29,77 +31,77 @@
                 </ul>
             </nav>
             </div>
-        <div class="header-bottom">
-           <h1>Задание 3</h1>
+       
         </div>
-        </div>
-
     </header>
 
     <main class="container">
         
-        <section id="links-section">
-    <h2>Маркированный список</h2>
-
-    <ul class="links-list">
-      <li>1. <a href="http://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTP)</a></li>
-    <li>2. <a href="https://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTPS)</a></li>
-     <li>3. Ссылка-изображение: <a href="https://kubsu.ru/" ><img src="18-02-2017_27.jpg" alt="Логотип КубГУ" width="150"></a></li>
-
-            <li>4. <a href="internal-page.html">Сокращенная ссылка на внутреннюю страницу</a></li>
-            <li>5. <a href="index.html">Сокращенная ссылка на главную страницу</a></li>
-
-            <li>6. <a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
-            <li>7. <a href="https://www.kubsu.ru/ru/search?keys=образование&category=8&year=2023">Ссылка с тремя параметрами в URL</a></li>
-            <li>8. <a href="https://www.kubsu.ru/ru/node/38730?id=12345">Ссылка с параметром id в URL</a></li>
-
-            <li>9. <a href="current-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-            <li>10. <a href="about/about-page.html">Относительная ссылка на страницу в каталоге about</a></li>
-            <li>11. <a href="LUP/LUP-page.html">Относительная ссылка на страницу уровнем выше</a></li>
-            <li>12. <a href="LUPUP/LUP/LUPUP.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
-
-            <li>13. Контекстная ссылка: <p>Это абзац текста, в котором находится <a href="https://kubsu.ru">контекстная ссылка</a> на сайт КубГУ.</p></li>
-            <li>14. <a href="https://ru.wikipedia.org/wiki/HTML#Версии">Ссылка на фрагмент страницы стороннего сайта (Wikipedia - HTML)</a></li>
-            <li>16. <a href="">Ссылка с пустым href</a></li>
-            <li>17. <a>Ссылка без href</a></li>
-            <li>18. <a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-            <li>19. <a href="https://kubsu.ru" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
-           
-            <li>21. <a href="ftp://example.com/">Ссылка на файл на сервере FTP с авторизацией</a></li>
-    </ul>
-
-        <h2>15. Ссылки из областей картинки </h2>
-        <p>Дерево - ссылка на английскую версию сайта КУБГУ</p>
-        <p>Надпись - ссылка на русскую версию сайта КУБГУ</p>
-        <div style="text-align: center;">
-            <img src="18-02-2017_27.jpg" alt="Пример изображения с областями" usemap="#examplemap" class="image-map">
-            <map name="examplemap">
-                <area shape="rect" coords="0,275,400,400" href="https://kubsu.ru" alt="Прямоугольная область" title="https://kubsu.ru">
-                <area shape="circle" coords="200,105,150" href="https://kubsu.ru/en" alt="Круглая область" title="https://kubsu.ru/en" >
-            </map>
-        </div>
-   
-
-   
-        <h2>20. Нумерованный список ссылок с подписями title</h2>
-        <ol>
-            <li><a href="https://kubsu.ru" title="Официальный сайт Кубанского государственного университета">Сайт КубГУ</a></li>
-            <li><a href="https://kubsu.ru/ru/university" title="Информация об университете">Об университете</a></li>
-            <li><a href="https://kubsu.ru/ru/education" title="Образовательные программы">Образование</a></li>
-            <li><a href="https://kubsu.ru/ru/science" title="Научная деятельность">Наука</a></li>
-            <li><a href="https://kubsu.ru/ru/abiturient" title="Информация для абитуриентов">Абитуриентам</a></li>
-        </ol>
-    </section>
-
-     <section id="fragment-section">
-        <h2 id="fragment" >Фрагмент текущей страницы</h2>
-        <p>Это фрагмент страницы, на который ведет ссылка из первого раздела.(п.6)</p>
-     </section>
+        <section class="links-section">
+            <h2>Маркированный список</h2>
+            <ul class="links-list">
+              <li>1. <a href="http://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTP)</a></li>
+              <li>2. <a href="https://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTPS)</a></li>
+              <li>3. Ссылка-изображение: <a href="https://kubsu.ru/" ><img src="18-02-2017_27.jpg" alt="Логотип КубГУ" width="150"></a></li>
+              <li>4. <a href="internal-page.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+              <li>5. <a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+              <li>6. <a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+              <li>7. <a href="https://www.kubsu.ru/ru/search?keys=образование&category=8&year=2023">Ссылка с тремя параметрами в URL</a></li>
+              <li>8. <a href="https://www.kubsu.ru/ru/node/38730?id=12345">Ссылка с параметром id в URL</a></li>
+              <li>9. <a href="current-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+              <li>10. <a href="about/about-page.html">Относительная ссылка на страницу в каталоге about</a></li>
+              <li>11. <a href="LUP/LUP-page.html">Относительная ссылка на страницу уровнем выше</a></li>
+              <li>12. <a href="LUPUP/LUP/LUPUP.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
+              <li>13. Контекстная ссылка: <p>Это абзац текста, в котором находится <a href="https://kubsu.ru">контекстная ссылка</a> на сайт КубГУ.</p></li>
+              <li>14. <a href="https://ru.wikipedia.org/wiki/HTML#Версии">Ссылка на фрагмент страницы стороннего сайта (Wikipedia - HTML)</a></li>
+              <li>16. <a href="">Ссылка с пустым href</a></li>
+              <li>17. <a>Ссылка без href</a></li>
+              <li>18. <a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+              <li>19. <a href="https://kubsu.ru" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+              <li>21. <a href="ftp://example.com/">Ссылка на файл на сервере FTP с авторизацией</a></li>
+            </ul>
 
 
-<section id="table-section">
+
+
+
+
+
+            
+            <h2>15. Ссылки из областей картинки </h2>
+            <p>Дерево - ссылка на английскую версию сайта КУБГУ</p>
+            <p>Надпись - ссылка на русскую версию сайта КУБГУ</p>
+            <div style="text-align: center;">
+                <img src="18-02-2017_27.jpg" alt="Пример изображения с областями" usemap="#examplemap" class="image-map">
+                <map name="examplemap">
+                    <area shape="rect" coords="0,275,400,400" href="https://kubsu.ru" alt="Прямоугольная область" title="https://kubsu.ru">
+                    <area shape="circle" coords="200,105,150" href="https://kubsu.ru/en" alt="Круглая область" title="https://kubsu.ru/en" >
+                </map>
+            </div>
+       
+
+      
+            <h2>20. Нумерованный список ссылок с подписями title</h2>
+            <ol>
+                <li><a href="https://kubsu.ru" title="Официальный сайт Кубанского государственного университета">Сайт КубГУ</a></li>
+                <li><a href="https://kubsu.ru/ru/university" title="Информация об университете">Об университете</a></li>
+                <li><a href="https://kubsu.ru/ru/education" title="Образовательные программы">Образование</a></li>
+                <li><a href="https://kubsu.ru/ru/science" title="Научная деятельность">Наука</a></li>
+                <li><a href="https://kubsu.ru/ru/abiturient" title="Информация для абитуриентов">Абитуриентам</a></li>
+            </ol>
+        
+              <section>
+            <h2 id="fragment" >Фрагмент текущей страницы</h2>
+            <p>Это фрагмент страницы, на который ведет ссылка из первого раздела.(п.6)</p>
+        </section>
+
+
+
+        </section>
+        
+        <section class="table-section">
             <h2>Таблица</h2>
-             <p>Внезапный топ 20 фильмов 2024 года по рейтингу Кинопоиска.<p>
+            <p>Внезапный топ 20 фильмов 2024 года по рейтингу Кинопоиска.</p>
             <p>Номер в рейтинге(по убыванию рейтинга).</p>
             <table>
                 <thead>
@@ -113,7 +115,6 @@
                         <th>Дата премьеры в России</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
                         <td>1</td>
@@ -124,7 +125,6 @@
                         <td>Драма</td>
                         <td>11 апреля 2024</td>
                     </tr>
-                  
                     <tr>
                         <td>2</td>
                         <td>8.3</td>
@@ -206,7 +206,6 @@
                         <td>фэнтези, комедия, приключения, семейный</td>
                         <td>12 декабря 2024</td>
                     </tr>
-                    
                     <tr>
                         <td>11</td>
                         <td>7.5</td>
@@ -279,7 +278,7 @@
                         <td>драма, триллер</td>
                         <td>28 марта 2024</td>
                     </tr>
-                      <tr>
+                    <tr>
                         <td>19</td>
                         <td rowspan="2">7.1</td>
                         <td>Волшебник Изумрудного города. Дорога из жёлтого кирпича</td>
@@ -288,113 +287,94 @@
                         <td>фэнтези, приключения, семейный</td>
                         <td rowspan="2">1 января 2025</td>
                     </tr>
-                      <tr>
+                    <tr>
                         <td>20</td>
-                        
                         <td>Постучись в мою Тверь</td>
-                        
                         <td>92 минуты</td>
                         <td>комедия, мелодрама</td>
-                       
                     </tr>
                 </tbody>
             </table>
         </section>
 
-  <section id="form-section">
-    <h2>Форма</h2>
-<form id="userForm">
+      
 
-    
+      
+        <section class="form-section">
+            <h2>Форма</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Имя: </label><br>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-massage">Пожалуйста, введите ваше имя</div>
+                </div>
 
-<div class="form-group">
-<label for="name">Имя: </label><br>
-<input type="text" id="name" name="name" required>
-<div class="error-massage">Пожалуйста, введите ваше имя</div>
-</div>
+                <div class="form-group">
+                    <label for="phone">Телефон: </label><br>
+                    <input type="tel" id="phone" name="name" required pattern="[\+]\d{1}\s?[\(]\d{3}[\)\s?\d{3}[\-]\d{2}[\-]\d{2}" placeholder="+7(999)999-99-99">
+                    <div class="error-massage">Пожалуйста, введите телефон в формате +7(999)999-99-99</div>
+                </div>
 
+                <div class="form-group">
+                    <label for="email">Email: </label><br>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-massage">Пожалуйста, введите корректный email</div>
+                </div>
 
-<div class="form-group">
-     <label for="phone">Телефон: </label><br>
-     <input type="tel" id="phone" name="name" required pattern="[\+]\d{1}\s?[\(]\d{3}[\)\s?\d{3}[\-]\d{2}[\-]\d{2}" placeholder="+7(999)999-99-99">
-     <div class="error-massage">Пожалуйста, введите телефон в формате +7(999)999-99-99</div>
-</div>
+                <div class="form-group">
+                    <label for="birthdate">Дата рождения: </label><br>
+                    <input type="date" id="birthdate" name="birthdate" required >
+                    <div class="error-massage">Пожалуйста, выберите дату рождения</div>
+                </div>
 
+                <div class="form-group">
+                    <span>Пол:</span>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male" required> Мужской</label>
+                        <label><input type="radio" name="gender" value="female"> Женский</label>
+                    </div>
+                    <div class="error-massage">Пожалуйста, выберите пол</div>
+                </div>
 
-<div class="form-group">
-    <label for="email">Email: </label><br>
-    <input type="email" id="email" name="email" required>
-    <div class="error-massage">Пожалуйста, введите корректный email</div>
-</div>
-
-<div class="form-group">
-    <label for="birthdate">Дата рождения: </label><br>
-    <input type="date" id="birthdate" name="birthdate" required >
-    
-    <div class="error-massage">Пожалуйста, выберите дату рождения</div>
-</div>
-   
-
-
-    
-
-
-    
-    
-    <div class="form-group">
-    <span>Пол:</span>
-    <div class="radio-group">
-        <label><input type="radio" name="gender" value="male" required> Мужской</label>
-        <label><input type="radio" name="gender" value="female"> Женский</label>
-    <br>
-    </div>
-    <div class="error-massage">Пожалуйста, выберите пол</div>
-</div>
-
-    <div class="form-group">
-    <label for="languages">Любимый язык программирования:</label>
-        <select multiple id="languages" name="languages">
-            <option value="pascal">Pascal</option>
-              <option value="Python">Python</option>
-                <option value="C++">C++</option>
-                  <option value="C">C</option>
-                    <option value="JavaScript">JavaScript</option>
-                      <option value="PHP">PHP</option>
+                <div class="form-group">
+                    <label for="languages">Любимый язык программирования:</label>
+                    <select multiple id="languages" name="languages">
+                        <option value="pascal">Pascal</option>
+                        <option value="Python">Python</option>
+                        <option value="C++">C++</option>
+                        <option value="C">C</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
                         <option value="Java">Java</option>
-                         <option value="Haskel">Haskel</option>
-                           <option value="Clojure">Clojure</option>
-                            <option value="Prolog">Scala</option>
-        </select>
-    <br>
-</div>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Scala</option>
+                    </select>
+                </div>
 
-<div class="form-group">
-    <label for="bio">Биография:</label><br>
-     <textarea id="bio" name="bio" required minlength="10"></textarea>
-     <div class="error-massage">Введите минимум 10 символов</div>
-</div>
+                <div class="form-group">
+                    <label for="bio">Биография:</label><br>
+                    <textarea id="bio" name="bio" required minlength="10"></textarea>
+                    <div class="error-massage">Введите минимум 10 символов</div>
+                </div>
 
-<div class="form-group">
-    <label>С контрактом ознакомлен(a)<input type="checkbox" id="agreement" name="agreement" required> </label><br>
-    <div class="error-massage">Необходимо принять условия соглашения</div>
-</div>
+                <div class="form-group">
+                    <label>С контрактом ознакомлен(a)<input type="checkbox" id="agreement" name="agreement" required> </label><br>
+                    <div class="error-massage">Необходимо принять условия соглашения</div>
+                </div>
 
-    <button type="submit" id="submitButton">Сохранить</button>
-</form>
+                <button type="submit" id="submitButton">Сохранить</button>
+            </form>
+        </section>
+    </main>
 
-</section>
-</main>
-
-<!--Подвал-->
-<footer>
-    <div class="container">
-<p>"Abracadabra studio"</p>
-<p>Касьянов Руслан - разработка пользовательского web-интерфейса</p>
-    </div>
-</footer>
-
-
-
+    <!--Подвал-->
+    <footer>
+        <div class="container">
+            <p>"Abracadabra studio"</p>
+            <p>Касьянов Руслан - разработка пользовательского web-интерфейса</p>
+        </div>
+    </footer>
 
   </body>
 
