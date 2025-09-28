@@ -1,4 +1,4 @@
-/* Общие стили */
+/* Mobile First стили */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -27,13 +27,16 @@ header {
 
 .header-top {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    
     padding: 15px 0;
 }
 
+
+
 .logo img {
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 nav ul {
@@ -44,7 +47,8 @@ nav ul {
 }
 
 nav li {
-    margin-left: 20px;
+    margin: 5px 0;
+    text-align: center;
 }
 
 nav a {
@@ -52,14 +56,9 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s;
-     display: block;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
+    display: block;
+    padding: 8px 0;
 }
-
-
-
 
 nav a:hover {
     opacity: 0.8;
@@ -68,21 +67,33 @@ nav a:hover {
 .header-bottom {
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  
 }
 
 .header-bottom h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
+    
 }
 
 /* Основное содержимое */
 main {
     padding: 30px 0;
     min-height: calc(100vh - 200px);
-    flex: 1;
-            display: flex;
-            flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Изменение порядка секций для мобильных устройств */
+.links-section {
+    order: 2;
+}
+
+.table-section {
+    order: 1;
+}
+.form-section{
+    order: 3;
 }
 
 h2 {
@@ -144,6 +155,8 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    display: block;
 }
 
 th, td {
@@ -157,26 +170,21 @@ th {
     font-weight: bold;
 }
 
-/* Четные строки */
-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
 }
 
-/* Нечетные строки */
-table tbody tr:nth-child(odd) {
-    background-color: white;
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
 }
 
-table tbody tr:hover {
-    background-color: #ecf0f1;
+tbody tr:hover {
+    background-color: #e8f4f8;
 }
 
 th:nth-child(5),
 td:nth-child(5) {
-    width: 110px; /* Увеличиваем ширину столбца */
-    
-    
-    
+    width: 110px;
 }
 
 /* Форма */
@@ -235,6 +243,7 @@ button[type="submit"] {
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 button[type="submit"]:hover {
@@ -254,99 +263,54 @@ footer p {
     margin: 5px 0;
 }
 
-
-/* Порядок отображения секций на мобильных устройствах */
-        /* Таблица должна отображаться выше списка ссылок */
-        #links-section {
-            order: 2;
-        }
-        
-        #table-section {
-            order: 1;
-        }
-        #fragment-section {
-            order: 3;
-        }
-        #form-section {
-            order: 4;
-        }
-        /* Media Query для планшетов (min-width: 768px) */
-        @media (min-width: 768px) {
-            .container {
-                max-width: 720px;
-            }
-            
-            .header-content {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            
-            .logo {
-                margin-bottom: 0;
-            }
-            
-            .site-title {
-                text-align: left;
-            }
-            
-            nav ul {
-                flex-direction: row;
-            }
-            
-            nav li {
-                margin: 0 0 0 25px;
-            }
-            
-            nav a {
-                background: none;
-                padding: 5px;
-            }
-            
-            h1 {
-                font-size: 32px;
-            }
-            
-            h2 {
-                font-size: 24px;
-            }
-            
-            table {
-                font-size: 15px;
-            }
-            
-            th, td {
-                padding: 12px 15px;
-            }
-            
-            th:nth-child(3),
-            td:nth-child(3) {
-                width: 200px;
-                min-width: 150px;
-            }
-            
-            .checkbox-container {
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 15px;
-            }
-            
-            .checkbox-item {
-                width: auto;
-            }
-            
-            /* Восстанавливаем исходный порядок секций на планшетах и десктопах */
-            #links-section,
-            #table-section {
-                order: 0;
-            }
-        }
-        
-        /* Media Query для десктопов (min-width: 1024px) */
-        @media (min-width: 1024px) {
-            .container {
-                max-width: 960px;
-            }
-
-        }
-
-
+/* Стили для планшетов и десктопов */
+@media (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .header-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo img {
+        margin-bottom: 0;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        width: auto;
+    }
+    
+    nav li {
+        margin: 0 0 0 20px;
+    }
+    
+    nav a {
+        padding: 0;
+    }
+    
+    .header-bottom h1 {
+        font-size: 2rem;
+    }
+    
+    main {
+        display: block;
+    }
+    
+    .links-section,
+    .table-section,
+    .form-section {
+        order: 0;
+    }
+    
+    table {
+        display: table;
+    }
+    
+    button[type="submit"] {
+        width: auto;
+    }
+}
