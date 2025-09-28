@@ -264,7 +264,12 @@ footer p {
         #table-section {
             order: 1;
         }
-        
+         #fragment {
+            order: 3;
+        }
+        #form-section {
+            order: 4;
+        }
         /* Media Query для планшетов (min-width: 768px) */
         @media (min-width: 768px) {
             .container {
@@ -343,3 +348,4 @@ footer p {
             }
 
         }
+
