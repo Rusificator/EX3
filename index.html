@@ -311,8 +311,8 @@
 
                 <div class="form-group">
                     <label for="phone">Телефон: </label><br>
-                    <input type="tel" id="phone" name="name" required pattern="[\+]\d{1}\s?[\(]\d{3}[\)\s?\d{3}[\-]\d{2}[\-]\d{2}" placeholder="+7(999)999-99-99">
-                    <div class="error-massage">Пожалуйста, введите телефон в формате +7(999)999-99-99</div>
+                    <input type="tel" id="phone" name="phone" required pattern="^\+7\d{10}$" placeholder="+71234567890">
+                    <div class="error-massage">Пожалуйста, введите телефон в формате +7</div>
                 </div>
 
                 <div class="form-group">
@@ -375,6 +375,30 @@
             <p>Касьянов Руслан - разработка пользовательского web-интерфейса</p>
         </div>
     </footer>
+
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit',function(event){
+            const phoneInput=document.getElementById('phone');
+            const phoneValue=phoneInput.value.trim();
+
+            if(!phoneValue.startWith('+7')||phoneValue.length!==12){
+                event.preventDefault();
+                alert('Телефон должен начинаться с +7 и содержать 10 цифр после него');
+                phoneInput.focus();
+                return false;
+            }
+
+            const digitOnly=phoneValue.substring(2);
+            if(!/^\d{10}$/.test(digitOnly)){
+                event.preventDefault();
+                alert('После +7 должны быть только цифры');
+                phoneInput.focus();
+                return false;
+            }
+        });
+
+    </script>
 
   </body>
 
